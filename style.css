@@ -30,8 +30,8 @@ nav .mainMenu li a {
 }
 
 nav .mainMenu li a:hover {
-    color: rgba(0,212,255,0.5943627450980392);
-    background: blue;
+    color: blue;
+    background: rgba(0,212,255,0.5943627450980392);
 }
 
 nav .openMenu {
@@ -49,11 +49,20 @@ nav .mainMenu .closeMenu, .icons i {
 
 nav .logo {
     margin-left: 1rem;
+    letter-spacing: 3px;
     margin-top: 1rem;
     color: blue;
     font-weight: bold;
     font-size: 2rem;
     font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+nav .logo::first-letter {
+    color: rgba(0,212,255,0.5943627450980392);
+}
+.home i {
+    text-decoration: underline;
+    color: blue;
 }
 
 @media (max-width: 800px) {
@@ -73,9 +82,10 @@ nav .logo {
         z-index: 10;
     } 
     nav .mainMenu .closeMenu {
-        display: block;
+        display: flex;
         position: absolute;
         right: 20px;
+        top: 15px
     }
 
     nav .openMenu {
@@ -108,6 +118,11 @@ nav .logo {
     background-color: blue;
     color: black;
 }
+.fa-github:hover {
+    border-radius: 50%;
+    background-color: blue;
+    color: black;
+}
 
 .home {
     height: 80vh;
@@ -132,6 +147,7 @@ nav .logo {
     border-radius: 10px;
     text-align: none;
     font-weight: 900;
+    text-transform: uppercase;
     letter-spacing: 1px;
     z-index: 1;
     overflow: hidden;
@@ -155,6 +171,9 @@ nav .logo {
 .btn1:hover {
     color: rgba(0,212,255,0.5943627450980392);
 }
+.btn2:hover {
+    color: blue;
+}
 
 .btn::before {
     background-color: rgb(21, 30, 193);
@@ -175,7 +194,7 @@ nav .logo {
 
 .btn1::before{
     bottom: 0;
-    border-radius:50% 50% 1 1;
+    border-radius: 0 0 50% 50%;
 }
  
 .btn1::before {
@@ -204,10 +223,40 @@ body {
 
 
 h1 {
+    position: relative;
     color: rgba(29,41,253,1);
-    font-weight: 800;
+    background-color: #000;
+    max-width: 500px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     margin-top: 50px;
+    animation: text 3s 1;
 }
+
+@keyframes text {
+    0% {
+        color: black;
+        background-color: #000;
+        margin-bottom: -40px;
+    }
+    30% {
+        background-color: #000;
+        letter-spacing: 7px;
+        margin-bottom: -40px;
+    }
+    85% {
+        background-color: #000;
+        letter-spacing: 3px;
+        margin-bottom: -40px;
+    }
+}
+
+.lead {
+    font-weight: 600; 
+    color: rgba(0,212,255,0.5943627450980392);
+}
+
 #sec-two > div h2 {
     display: flex;
     justify-content: center;
@@ -219,11 +268,6 @@ h1 {
 
 #container p {
     font-weight: 700; 
-}
-
-.lead {
-    font-weight: 900; 
-    color: rgba(0,212,255,0.5943627450980392);
 }
 
 .about-para {
@@ -319,6 +363,19 @@ h3 {
 
     #two .social {
         display:none;
+    }
+
+    h1 {
+        position: relative;
+        color: rgba(29,41,253,1);
+        background: url(./images/small\ screen\ size.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-top: 50px;
+        animation: text 3s 1;
     }
 
 }
