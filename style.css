@@ -60,10 +60,7 @@ nav .logo {
 nav .logo::first-letter {
     color: rgba(0,212,255,0.5943627450980392);
 }
-.home i {
-    text-decoration: underline;
-    color: blue;
-}
+
 
 @media (max-width: 800px) {
 
@@ -226,11 +223,12 @@ h1 {
     position: relative;
     color: rgba(29,41,253,1);
     background-color: #000;
-    max-width: 500px;
+    max-width: 480px;
+    height: 40px;
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-top: 50px;
+    margin-top: 10px;
     animation: text 3s 1;
 }
 
@@ -255,6 +253,7 @@ h1 {
 .lead {
     font-weight: 600; 
     color: rgba(0,212,255,0.5943627450980392);
+    text-decoration: underline;
 }
 
 #sec-two > div h2 {
@@ -372,9 +371,10 @@ h3 {
         background-size: cover;
         background-position: center;
         width: 100%;
+        height: 40px;
         font-weight: 700;
         letter-spacing: 2px;
-        margin-top: 50px;
+        margin-top: 10px;
         animation: text 3s 1;
     }
 
