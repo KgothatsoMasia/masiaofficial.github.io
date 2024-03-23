@@ -560,7 +560,6 @@ h1 {
 div #scrollmenu {
     overflow-x: scroll;
     white-space: nowrap;
-    overflow-x: hidden;
 }
 
 
@@ -658,7 +657,6 @@ h3 {
     div #scrollmenu {
         overflow-x: scroll;
         white-space: nowrap;
-        overflow-x: hidden;
     }
 
 
