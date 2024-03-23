@@ -74,9 +74,6 @@ h2::first-letter {
 }
 
 @media (max-width: 800px) {
-    .desktop img:hover {
-        scale: none;
-    }
 
     nav .mainMenu {
         display: none;
@@ -553,18 +550,31 @@ h1 {
     margin-top: 50px;
     max-width: 900px;
 }
-.desktop img {
+
+#scrollmenu img:hover {
+    height: 200px;
+    width: 200px;
+    scale: 1;
+}
+
+div #scrollmenu {
+    overflow-x: scroll;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+
+div #scrollmenu img {
     display: inline-block;
+    align-items: center;
     padding: 20px;
     width: 300px;
     height: 300px;
     transition: 2s;
 }
 
-.desktop img:hover {
-    height: 200px;
-    width: 200px;
-    scale: 1;
+div #scrollmenu img:hover {
+    background-color: #777;
 }
 
 /* #container2 > div >h2 {
@@ -644,14 +654,20 @@ h3 {
         background-position: center; 
       }
 
-      .desktop {
-        display: inline-flex;
-        padding: 20px;
-        width: 300px;
-        height: 300px;
+      
+    div #scrollmenu {
+        overflow-x: scroll;
+        white-space: nowrap;
+        overflow-x: hidden;
     }
-    .desktop img:hover {
-        scale: none;
+
+
+    div #scrollmenu img {
+        display: inline-block;
+    }
+
+    div #scrollmenu img:hover {
+        background-color: #777;
     }
 
       .buttons {
