@@ -29,6 +29,7 @@ nav .mainMenu {
 }
 
 nav .mainMenu li a {
+    overflow-x: hidden;
     display: inline-block;
     color: white;
     padding: 15px;
@@ -44,6 +45,7 @@ nav .mainMenu li a:hover {
 }
 
 nav .openMenu {
+    overflow-x: hidden;
     display: none;
     font-size: 2rem;
     margin: 15px;
@@ -51,12 +53,14 @@ nav .openMenu {
 }
 
 nav .mainMenu .closeMenu, .icons i {
+    overflow-x: hidden;
     display: none;
     font-size: 1rem;
     cursor: pointer;
 }
 
 nav .logo {
+    overflow-x: hidden;
     margin-left: 1rem;
     letter-spacing: 3px;
     margin-top: 1rem;
@@ -76,6 +80,7 @@ h2::first-letter {
 @media (max-width: 800px) {
 
     nav .mainMenu {
+        overflow-x: hidden;
         display: none;
         flex-direction: column;
         justify-content: center;
@@ -91,11 +96,12 @@ h2::first-letter {
         z-index: 10;
     } 
     nav .mainMenu .closeMenu {
-        display: flex;
+        display: block;
         position: absolute;
         width: 100vb;
         right: 20px;
-        top: 15px
+        top: 15px;
+        z-index: 1;
     }
 
     nav .openMenu {
@@ -135,6 +141,7 @@ h2::first-letter {
 }
 
 .home {
+    overflow-x: hidden;
     margin-top: 1rem;
     height: 80vh;
     display: flex;
@@ -146,7 +153,12 @@ h2::first-letter {
     max-width: 700px;
 } */
 
+div .buttons {
+    overflow-x: hidden;
+}
+
 .btn {
+    overflow-x: hidden;
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -166,6 +178,7 @@ h2::first-letter {
 }
 
 .btn2 {
+    overflow-x: hidden;
     margin: 30px;
     background-color: transparent;
     color: rgba(0,212,255,0.5943627450980392);
@@ -176,6 +189,7 @@ h2::first-letter {
 }
 
 .btn1 {
+    overflow-x: hidden;
     color: blue;
 }
 
@@ -226,6 +240,7 @@ h2::first-letter {
 }
 
 .send {
+    overflow-x: hidden;
     position: relative;
     display: inline-flex;
     justify-content: center;
@@ -557,8 +572,8 @@ h1 {
     scale: 1;
 }
 
-div #scrollmenu {
-    overflow-x: scroll;
+div .desktop {
+    overflow-x: auto;
     white-space: nowrap;
 }
 
@@ -654,8 +669,8 @@ h3 {
       }
 
       
-    div #scrollmenu {
-        overflow-x: scroll;
+    div  {
+        overflow-x:scroll;
         white-space: nowrap;
     }
 
@@ -669,6 +684,7 @@ h3 {
     }
 
       .buttons {
+        overflow-x: hidden;
         display: flex;
         justify-content: center;
         align-items: center;
