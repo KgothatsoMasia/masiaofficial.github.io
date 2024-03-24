@@ -59,6 +59,13 @@ nav .mainMenu .closeMenu, .icons i {
     cursor: pointer;
 }
 
+.sec-1 {
+    background: url(images/best2.jpg) no-repeat;
+    background-size: 200px;
+    background-position: top;
+    z-index: -1;
+}
+
 nav .logo {
     overflow-x: hidden;
     margin-left: 1rem;
