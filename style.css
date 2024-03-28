@@ -6,7 +6,7 @@
 }
 
 .pop-up {
-    width: 400px;
+    width: 350px;
     background: rgba(0,212,255,0.5943627450980392);
     border-radius: 6px;
     position: absolute;
@@ -24,12 +24,12 @@
     transform: translate(-50%, -50%) scale(1);
     transition: transform 0.4, top 0.4s;
 }
-.fa-check {
+.fa-face-smile {
     text-align: center;
-    color: #fff;
-    background-color:  rgba(29,41,253,1);
-    font-size: 50px;
+    color: rgba(29,41,253,1);
+    font-size: 40px;
     font-weight: bolder;
+    background: rgba(0,212,255,0.5943627450980392);
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -40,7 +40,7 @@
     width: 100%;
     margin-top: 50px;
     padding: 10px 0;
-    background: rgba(0,212,255,0.5943627450980392);
+    background:  rgba(29,41,253,1);
     color: #fff;
     border: 0;
     outline: none;
