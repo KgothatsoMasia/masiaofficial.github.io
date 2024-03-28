@@ -6,6 +6,7 @@ openMenu.addEventListener('click',show);
 closeMenu.addEventListener('click',close);
 
 let sections = document.querySelectorAll('section');
+let popup = document.getElementById("popup");
 
 window.onscroll = () => {
     sections.forEach(sec => {
@@ -31,4 +32,12 @@ function show() {
 
 function close() {
     mainMenu.style.top = '-100%';
+}
+
+
+function showPopUp() {
+    popup.classList.add("open-popup");
+}
+function closePopUp() {
+    popup.classList.remove("open-popup");
 }
